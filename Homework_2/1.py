@@ -14,7 +14,6 @@ import numpy as np
 x_values = np.arange(0, 6)
 distribution = {a: cf.combinations(5, a) * ((1 / 4) ** a) * ((3 / 4) ** (5 - a)) for a in x_values}
 print("Закон распределения числа правильных ответов при простом угадывании (x: P(X=x))", distribution)
-x_probabilities = [cf.combinations(5, i) * ((1 / 4) ** i) * ((3 / 4) ** (5 - i)) for i in x_values]
 m = 5 * (1 / 4)
 print("Математическое ожидание равно", m)
 d = 5 * (1 / 4) * (3 / 4)
